@@ -1,0 +1,31 @@
+A TENER EN CUENTA:
+Hice el Inicio tomando como base el proyecto que teniamos anteriormente, ahora cuando estoy por hacer el push veo que el nuevo proyecto tiene diferencias. Revisar!
+
+INSTALLS
+npm install o pnpm install para instalar todo lo del package
+Sino:
+*El inicio usa Gsap y Framer Motion para su Header
+npm install framer-motion gsap
+*Fuente: Sora 
+npm install @fontsource/sora
+*Y usa Lucid-React y React-icons
+npm install lucide-react react-icons
+
+NAVBAR
+El navbar no está trabajado ya que no es el que va a quedar.
+
+CALLTOACTION
+Podría haber dos versiones, lo único que habría que cambiar es la imagen
+*redes.jpg
+*infraestructura.jpg
+
+OTRAS SECCIONES
+Están casi todas las de la web original excepto alguna que me pareció redundante.
+Creo que estan todas ok, como para largar a producción, uds vean y me dicen.
+TESTIMONIOS
+La única que no me gusta es Testimonios. Yo traté de usar algunos colores de la web original los que verán que aparecen como INDIGO, por ej. 
+Y como su sección testimonio estaba en ese azul lo deje más o menos parecido. Igual, es la sección que menos me convence, por colores y demás.
+Creo que ya modificadas las otras secciones, este azul no estaría pegando mucho, hay que retrabajar.
+
+LINKS:
+Nada está linkeado por ahora hasta completar otras secciones / páginas que son aparte del Inicio.
