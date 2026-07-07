@@ -1,5 +1,3 @@
-import "../css/testimonios.css";
-
 const testimonials = [
   {
     id: 1,
@@ -21,72 +19,66 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials() {
+export default function TestimoniosTailwind() {
   return (
-    <section className="testimonials">
+    <>
+      <style>{`
+        .tw-testimonials::before {
+          content: "";
+          position: absolute;
+          width: 650px;
+          height: 650px;
+          border-radius: 50%;
+          background: rgba(124, 92, 255, .15);
+          top: -250px;
+          right: -180px;
+          filter: blur(30px);
+        }
+      `}</style>
 
-      <div className="container">
+      <section className="py-[110px] bg-gradient-to-b from-[#13284D] to-[#203A73] relative overflow-hidden max-md:py-[80px] tw-testimonials" style={{ fontFamily: "sans-serif" }}>
+        <div className="w-[min(1200px,90%)] mx-auto">
 
-        <div className="section-header">
+          <div className="text-center max-w-[720px] mx-auto mb-[70px] relative z-10">
+            <span className="inline-block px-[18px] py-[10px] rounded-full bg-white/[.08] text-white text-[0.8rem] tracking-[2px] font-bold mb-[22px]">
+              TESTIMONIOS
+            </span>
+            <h2 className="text-white text-[clamp(2rem,4vw,3.3rem)] font-extrabold mb-[18px]">
+              Lo que dicen nuestros clientes
+            </h2>
+            <p className="text-white/75 leading-[1.8]">
+              Empresas que confiaron en nosotros para impulsar su
+              transformación tecnológica.
+            </p>
+          </div>
 
-          <span className="section-tag">
-            TESTIMONIOS
-          </span>
-
-          <h2>
-            Lo que dicen nuestros clientes
-          </h2>
-
-          <p>
-            Empresas que confiaron en nosotros para impulsar su
-            transformación tecnológica.
-          </p>
+          <div className="grid grid-cols-3 gap-[30px] relative z-10 max-w-[1100px] mx-auto max-[1100px]:grid-cols-1">
+            {testimonials.map((item) => (
+              <article
+                key={item.id}
+                className="bg-white/[.08] border border-white/[.12] backdrop-blur-[18px] rounded-[22px] p-[35px] transition duration-[.35s] hover:-translate-y-[10px] hover:bg-white/[.12] max-md:p-[28px]"
+              >
+                <div className="text-[#FFD166] text-[20px] mb-[28px] tracking-[4px]">
+                  ★★★★★
+                </div>
+                <p className="text-white leading-[1.9] text-[1rem] mb-[35px] italic">
+                  "{item.text}"
+                </p>
+                <div className="flex items-center gap-[18px]">
+                  <div className="w-[58px] h-[58px] rounded-full bg-gradient-to-br from-[#4F46E5] to-[#7C5CFF] flex items-center justify-center text-white text-[22px] font-bold">
+                    {item.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h4 className="text-white mb-[6px] text-[1rem]">{item.name}</h4>
+                    <span className="text-white/65 text-[0.9rem]">{item.company}</span>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
 
         </div>
-
-        <div className="testimonials-grid">
-
-          {testimonials.map((item) => (
-
-            <article
-              key={item.id}
-              className="testimonial-card"
-            >
-
-              <div className="testimonial-stars">
-
-                ★★★★★
-
-              </div>
-
-              <p className="testimonial-text">
-                "{item.text}"
-              </p>
-
-              <div className="testimonial-footer">
-
-                <div className="testimonial-avatar">
-                  {item.name.charAt(0)}
-                </div>
-
-                <div>
-
-                  <h4>{item.name}</h4>
-
-                  <span>{item.company}</span>
-
-                </div>
-
-              </div>
-
-            </article>
-
-          ))}
-
-        </div>
-
-      </div>
-
-    </section>
+      </section>
+    </>
   );
 }
