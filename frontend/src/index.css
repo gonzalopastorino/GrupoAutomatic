@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* ==========================
+   GLOBAL
+========================== */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+
+
+/* ==========================
+   MATERIAL SYMBOLS
+========================== */
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+}
+
+
+/* ==========================
+   PROJECT PREVIEW
+========================== */
+
+.project-row:hover .project-preview {
+  opacity: 1;
+  transform: scale(1) translate(-50%, -50%);
+}
+
+.project-row .project-preview {
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+  opacity: 0;
+  transform: scale(0.8) translate(-50%, -40%);
+}
+
+
+/* ==========================
+   BORDERS
+========================== */
+
+.border-thin {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.dark .border-thin {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+
+.hero-buttons {
+
+  display: flex;
+
+  gap: 18px;
+
+  margin-top: 45px;
+
+}
+
+
+
+.btn-primary {
+
+  background: linear-gradient(
+    90deg,
+    #4f46e5,
+    #7c5cff
+  );
+
+  color: white;
+
+  border: none;
+
+  padding: 18px 34px;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  transition: 0.35s;
+
+  box-shadow:
+    0 20px 35px rgba(92,76,255,0.25);
+
+}
+
+
+
+.btn-primary:hover {
+
+  transform: translateY(-4px);
+
+}
+
+
+
+.btn-outline {
+
+  background: transparent;
+
+  border: 2px solid rgba(255,255,255,0.18);
+
+  color: white;
+
+  padding: 18px 34px;
+
+  border-radius: 12px;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  transition:.35s;
+
+}
+
+
+
+.btn-outline:hover {
+
+  background:white;
+
+  color:#13284d;
+
+}
+
+
+/* ==========================
+   SMOOTH SCROLL
+========================== */
+
+
+html {
+
+  scroll-behavior: smooth;
+
+}
