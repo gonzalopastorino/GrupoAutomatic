@@ -1,0 +1,16 @@
+DONE:
+- logo resize
+- cambios en orden de servicios (galeria de servicios)
+- revisar colores de botones, bordes, texto en contacto
+- agregar blogpreview al inicio
+- en navbar: "contáctenos" por "contáctanos"
+- color de botones (en css o en tailwind)
+- revisar cel
+- links a redes
+- pagina interna, blog
+
+TODO: 
+- email en imagen (anti scrapping)
+- revisar copywriting
+- revisar codigo sugerido
+- en quienes somos, agregar productos
