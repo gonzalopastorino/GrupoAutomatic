@@ -19,66 +19,236 @@ const testimonials = [
   },
 ];
 
+
 export default function TestimoniosTailwind() {
+
   return (
-    <>
-      <style>{`
-        .tw-testimonials::before {
-          content: "";
-          position: absolute;
-          width: 650px;
-          height: 650px;
-          border-radius: 50%;
-          background: rgba(124, 92, 255, .15);
-          top: -250px;
-          right: -180px;
-          filter: blur(30px);
-        }
-      `}</style>
 
-      <section className="py-[110px] bg-gradient-to-b from-[#13284D] to-[#203A73] relative overflow-hidden max-md:py-[80px] tw-testimonials" style={{ fontFamily: "sans-serif" }}>
-        <div className="w-[min(1200px,90%)] mx-auto">
+    <section
+      className="
+        relative
+        overflow-hidden
+        bg-linear-to-b
+        from-[#13284D]
+        to-[#203A73]
+        py-24
+        md:py-27.5
+      "
+    >
 
-          <div className="text-center max-w-[720px] mx-auto mb-[70px] relative z-10">
-            <span className="inline-block px-[18px] py-[10px] rounded-full bg-white/[.08] text-white text-[0.8rem] tracking-[2px] font-bold mb-[22px]">
-              TESTIMONIOS
-            </span>
-            <h2 className="text-white text-[clamp(2rem,4vw,3.3rem)] font-extrabold mb-[18px]">
-              Lo que dicen nuestros clientes
-            </h2>
-            <p className="text-white/75 leading-[1.8]">
-              Empresas que confiaron en nosotros para impulsar su
-              transformación tecnológica.
-            </p>
-          </div>
+      {/* Decoración */}
+      <div
+        className="
+          absolute
+          -right-44
+          -top-64
+          h-162.5
+          w-162.5
+          rounded-full
+          bg-[#7C5CFF]/20
+          blur-3xl
+        "
+      />
 
-          <div className="grid grid-cols-3 gap-[30px] relative z-10 max-w-[1100px] mx-auto max-[1100px]:grid-cols-1">
-            {testimonials.map((item) => (
-              <article
-                key={item.id}
-                className="bg-white/[.08] border border-white/[.12] backdrop-blur-[18px] rounded-[22px] p-[35px] transition duration-[.35s] hover:-translate-y-[10px] hover:bg-white/[.12] max-md:p-[28px]"
-              >
-                <div className="text-[#FFD166] text-[20px] mb-[28px] tracking-[4px]">
-                  ★★★★★
-                </div>
-                <p className="text-white leading-[1.9] text-[1rem] mb-[35px] italic">
-                  "{item.text}"
-                </p>
-                <div className="flex items-center gap-[18px]">
-                  <div className="w-[58px] h-[58px] rounded-full bg-gradient-to-br from-[#4F46E5] to-[#7C5CFF] flex items-center justify-center text-white text-[22px] font-bold">
-                    {item.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="text-white mb-[6px] text-[1rem]">{item.name}</h4>
-                    <span className="text-white/65 text-[0.9rem]">{item.company}</span>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+
+      <div
+        className="
+          relative
+          mx-auto
+          w-[90%]
+          max-w-300
+        "
+      >
+
+
+        {/* Header */}
+        <div
+          className="
+            relative
+            z-10
+            mx-auto
+            mb-16
+            max-w-180
+            text-center
+          "
+        >
+
+          <span
+            className="
+              inline-block
+              rounded-full
+              bg-white/10
+              px-5
+              py-2.5
+              text-xs
+              font-bold
+              tracking-[2px]
+              text-white
+            "
+          >
+            TESTIMONIOS
+          </span>
+
+
+          <h2
+            className="
+              mt-5
+              text-4xl
+              font-extrabold
+              text-white
+              md:text-5xl
+            "
+          >
+            Lo que dicen nuestros clientes
+          </h2>
+
+
+          <p
+            className="
+              mt-4
+              leading-relaxed
+              text-white/75
+            "
+          >
+            Empresas que confiaron en nosotros para impulsar su
+            transformación tecnológica.
+          </p>
+
 
         </div>
-      </section>
-    </>
+
+
+
+        {/* Cards */}
+        <div
+          className="
+            relative
+            z-10
+            mx-auto
+            grid
+            max-w-175
+            grid-cols-1
+            gap-8
+            lg:grid-cols-3
+          "
+        >
+
+          {testimonials.map((item) => (
+
+            <article
+              key={item.id}
+              className="
+                rounded-3xl
+                border
+                border-white/10
+                bg-white/10
+                p-8
+                backdrop-blur-xl
+                transition-all
+                duration-300
+                hover:-translate-y-3
+                hover:bg-white/15
+              "
+            >
+
+
+              {/* Estrellas */}
+              <div
+                className="
+                  mb-7
+                  text-xl
+                  tracking-[4px]
+                  text-[#FFD166]
+                "
+              >
+                ★★★★★
+              </div>
+
+
+
+              {/* Texto */}
+              <p
+                className="
+                  mb-8
+                  italic
+                  leading-relaxed
+                  text-white
+                "
+              >
+                "{item.text}"
+              </p>
+
+
+
+              {/* Usuario */}
+              <div
+                className="
+                  flex
+                  items-center
+                  gap-5
+                "
+              >
+
+                <div
+                  className="
+                    flex
+                    h-14
+                    w-14
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-linear-to-br
+                    from-[#4F46E5]
+                    to-[#7C5CFF]
+                    text-xl
+                    font-bold
+                    text-white
+                  "
+                >
+                  {item.name.charAt(0)}
+                </div>
+
+
+                <div>
+
+                  <h4
+                    className="
+                      text-base
+                      font-semibold
+                      text-white
+                    "
+                  >
+                    {item.name}
+                  </h4>
+
+
+                  <span
+                    className="
+                      text-sm
+                      text-white/65
+                    "
+                  >
+                    {item.company}
+                  </span>
+
+
+                </div>
+
+              </div>
+
+
+            </article>
+
+          ))}
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
   );
 }

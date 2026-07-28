@@ -3,7 +3,7 @@ import ContactInfo from "../components/contact/ContactInfo";
 import ContactHero from "../components/contact/ContactHero";
 import ContactMap from "../components/contact/ContactMap";
 import ContactFAQ from "../components/contact/ContactFAQ";
-import ContactCTA from "../components/contact/ContactCTA";
+import ContactCallToAction from "../components/contact/ContactCallToAction";
 
 function Contact() {
   return (
@@ -32,7 +32,7 @@ function Contact() {
 
       <ContactFAQ />
 
-      <ContactCTA />
+      <ContactCallToAction />
 
     </section>
   );

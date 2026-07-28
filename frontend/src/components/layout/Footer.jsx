@@ -15,10 +15,10 @@ export default function FooterTailwind() {
 
           <ul className="list-none p-0 m-0">
             <li className="mb-[16px] cursor-pointer"><a href="#" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Inicio</a></li>
-            <li className="mb-[16px] cursor-pointer"><a href="#" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Quiénes Somos</a></li>
-            <li className="mb-[16px] cursor-pointer"><a href="#" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Servicios</a></li>
-            <li className="mb-[16px] cursor-pointer"><a href="#" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Blog</a></li>
-            <li className="mb-[16px] cursor-pointer"><a href="#" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Contáctanos</a></li>
+            <li className="mb-[16px] cursor-pointer"><a href="/nosotros" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Quiénes Somos</a></li>
+            <li className="mb-[16px] cursor-pointer"><a href="/servicios" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Servicios</a></li>
+            <li className="mb-[16px] cursor-pointer"><a href="/blog" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Blog</a></li>
+            <li className="mb-[16px] cursor-pointer"><a href="/contacto" className="no-underline text-[#444] text-[16px] font-normal transition-[.3s] hover:text-[#1C3680]">Contáctanos</a></li>
           </ul>
         </div>
 
@@ -47,9 +47,9 @@ export default function FooterTailwind() {
           <h3 className="text-[#13284D] text-[22px] font-bold mb-[30px]">Redes Sociales</h3>
 
           <div className="flex flex-col gap-[15px] items-start max-[768px]:flex-row max-[768px]:flex-wrap max-[768px]:justify-start">
-            <a href="#" className="no-underline text-white bg-gradient-to-r from-[#4F46E5] to-[#7C5CFF] py-[12px] px-[24px] rounded-[8px] text-[16px] transition-[.35s] shadow-[0_20px_35px_rgba(92,76,255,.25)] hover:-translate-y-[4px] max-[768px]:py-[10px] max-[768px]:px-[18px] max-[768px]:text-[14px]">LinkedIn</a>
-            <a href="#" className="no-underline text-white bg-gradient-to-r from-[#4F46E5] to-[#7C5CFF] py-[12px] px-[24px] rounded-[8px] text-[16px] transition-[.35s] shadow-[0_20px_35px_rgba(92,76,255,.25)] hover:-translate-y-[4px] max-[768px]:py-[10px] max-[768px]:px-[18px] max-[768px]:text-[14px]">Facebook</a>
-            <a href="#" className="no-underline text-white bg-gradient-to-r from-[#4F46E5] to-[#7C5CFF] py-[12px] px-[24px] rounded-[8px] text-[16px] transition-[.35s] shadow-[0_20px_35px_rgba(92,76,255,.25)] hover:-translate-y-[4px] max-[768px]:py-[10px] max-[768px]:px-[18px] max-[768px]:text-[14px]">Twitter</a>
+            <a href="https://www.instagram.com/grupoautomatic/" className="no-underline text-white bg-gradient-to-r from-[#4F46E5] to-[#7C5CFF] py-[12px] px-[24px] rounded-[8px] text-[16px] transition-[.35s] shadow-[0_20px_35px_rgba(92,76,255,.25)] hover:-translate-y-[4px] max-[768px]:py-[10px] max-[768px]:px-[18px] max-[768px]:text-[14px]">Instagram</a>
+            <a href="https://www.facebook.com/grupoautomaticoficial/" className="no-underline text-white bg-gradient-to-r from-[#4F46E5] to-[#7C5CFF] py-[12px] px-[24px] rounded-[8px] text-[16px] transition-[.35s] shadow-[0_20px_35px_rgba(92,76,255,.25)] hover:-translate-y-[4px] max-[768px]:py-[10px] max-[768px]:px-[18px] max-[768px]:text-[14px]">Facebook</a>
+
           </div>
         </div>
 

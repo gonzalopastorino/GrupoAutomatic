@@ -130,11 +130,11 @@ export default function ChatBot() {
               h-full
               sm:bottom-5
               sm:right-5
-              sm:w-[380px]
-              sm:h-[600px]
-              bg-zinc-900
+              sm:w-95
+              sm:h-150
+              bg-white
               border
-              border-zinc-700
+              border-gray-200
               sm:rounded-3xl
               shadow-2xl
               flex

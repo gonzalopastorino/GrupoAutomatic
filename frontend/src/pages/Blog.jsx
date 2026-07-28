@@ -1,9 +1,9 @@
-import BlogPreview from "../components/sections/BlogPreview";
+import BlogFull from "../components/sections/BlogFull";
 
 function Blog() {
   return (
     <>
-     <BlogPreview />
+     <BlogFull />
     </>
   );
 }

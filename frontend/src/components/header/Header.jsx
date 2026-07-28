@@ -10,24 +10,22 @@ export default function Header() {
       <div className="relative z-10 text-center container mx-auto px-4 flex flex-col items-center gap-6 pt-16">
         <AnimatedTitle />
 
-        <p className="text-gray-600 text-center text-base sm:text-lg md:text-xl max-w-2xl">Expertos en desarrollos para pequeñas empresas en toda Colombia.</p>
+        <p className="text-gray-600 text-center text-base sm:text-lg md:text-xl max-w-2xl">Expertos en desarrollos para empresas en toda Colombia.</p>
 
         <div className="hero-buttons">
           <a
-            href="https://wa.me/5491100000000"
+            href="https://wa.me/573116298867"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Solicita asesoría → 
+            Solicita asesoría via WhatsApp →
           </a>
           <a
-            href="https://wa.me/5491100000000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-black/20 hover:border-[#6a5acd] px-[34px] py-[18px] rounded-xl font-bold transition text-[16px] hover:-translate-y-1"
+            href="/contacto"
+            className="text-[#13284D] border border-black/20 hover:border-[#6a5acd] px-[34px] py-[18px] rounded-xl font-bold transition text-[16px] hover:-translate-y-1"
           >
-            Escríbenos por WhatsApp
+            Contáctanos via Formulario →
           </a>
         </div>
       </div>

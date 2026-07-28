@@ -1,254 +1,163 @@
-function ContactInfo() {
+const contactItems = [
+  {
+    label: "Email",
+    value: "info@visionartificial.co",
+    icon: "✉",
+  },
+  {
+    label: "Teléfono",
+    value: "+57 300 123 4567",
+    icon: "☎",
+  },
+  {
+    label: "Ubicación",
+    value: "Bogotá, Colombia",
+    icon: "⌖",
+  },
+];
 
-  const contactItems = [
-    {
-      label: "Email",
-      value: "info@visionartificial.co",
-      icon: "✉"
-    },
-    {
-      label: "Teléfono",
-      value: "+57 300 123 4567",
-      icon: "☎"
-    },
-    {
-      label: "Ubicación",
-      value: "Bogotá, Colombia",
-      icon: "⌖"
-    }
-  ];
-
-
+const ContactInfo = () => {
   return (
     <div className="relative">
-
-
       {/* Glow decorativo */}
-      <div
-        className="
-        absolute
-        -top-20
-        -left-20
-        w-64
-        h-64
-        bg-blue-100
-        rounded-full
-        blur-3xl
-        opacity-70
-        "
-      />
-
+      <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-blue-100 opacity-70 blur-3xl" />
 
       <div className="relative">
-
-
-        <h2
-          className="
-          text-4xl
-          md:text-5xl
-          font-bold
-          tracking-tight
-          text-gray-900
-          leading-tight
-          "
-        >
+        <h2 className="text-4xl font-bold leading-tight tracking-tight text-[#13284D] md:text-5xl">
           Conectemos para
           <br />
           crear algo
-          <span className="text-blue-600">
-            extraordinario
-          </span>
+          <span className="text-blue-600"> extraordinario</span>
         </h2>
 
-
-
-
-        <p
-          className="
-          mt-6
-          text-lg
-          text-gray-600
-          leading-relaxed
-          max-w-xl
-          "
-        >
-          Contanos tu desafío. Nuestro equipo desarrolla
-          soluciones digitales, automatización y software
-          personalizado para empresas que buscan crecer.
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
+          Contanos tu desafío. Nuestro equipo desarrolla soluciones digitales,
+          automatización y software personalizado para empresas que buscan
+          crecer.
         </p>
 
-
-
-
-        <div
-          className="
-          mt-10
-          space-y-4
-          "
-        >
-
-
-          {contactItems.map((item, index) => (
-
-            <div
-              key={index}
+        {/* Información de contacto */}
+        <div className="mt-10 space-y-4">
+          {contactItems.map(({ label, value, icon }) => (
+            <article
+              key={label}
               className="
-              flex
-              items-center
-              gap-5
-              p-5
-              rounded-2xl
-              border
-              border-gray-200
-              bg-white
-              hover:border-blue-300
-              hover:shadow-lg
-              transition-all
-              duration-300
-              "
-            >
-
-
-              <div
-                className="
                 flex
                 items-center
-                justify-center
-                w-12
-                h-12
-                rounded-xl
-                bg-blue-600
-                text-white
-                text-xl
+                gap-5
+                rounded-2xl
+                border
+                border-gray-200
+                bg-white
+                p-5
+                shadow-sm
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-blue-300
+                hover:shadow-lg
+              "
+            >
+              <div
+                className="
+                  flex
+                  h-12
+                  w-12
+                  items-center
+                  justify-center
+                  rounded-xl
+                  bg-linear-to-r
+                  from-[#4F46E5]
+                  to-[#7C5CFF]
+                  text-xl
+                  text-white
                 "
               >
-                {item.icon}
+                {icon}
               </div>
-
-
 
               <div>
-
-                <p
-                  className="
-                  text-sm
-                  text-gray-500
-                  "
-                >
-                  {item.label}
-                </p>
-
-
-                <p
-                  className="
-                  font-semibold
-                  text-gray-900
-                  "
-                >
-                  {item.value}
-                </p>
-
-
+                <p className="text-sm text-gray-500">{label}</p>
+                <p className="font-semibold text-[#13284D]">{value}</p>
               </div>
-
-
-            </div>
-
+            </article>
           ))}
-
-
         </div>
 
-
-
-
-        <div
-          className="
-          mt-10
-          "
-        >
-
-          <p
-            className="
-            text-sm
-            text-gray-500
-            mb-4
-            "
-          >
+        {/* Redes sociales */}
+        <div className="mt-10">
+          <p className="mb-4 text-sm text-gray-500">
             Seguinos en redes
           </p>
 
-
-          <div className="flex gap-3">
-
-
+          <div className="flex flex-wrap gap-3">
             <a
-              href="#"
+              href="https://www.instagram.com/grupoautomatic/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-              px-5
-              py-3
-              rounded-xl
-              bg-gray-900
-              text-white
-              text-sm
-              font-medium
-              hover:bg-blue-600
-              transition
-              "
-            >
-              LinkedIn
-            </a>
-
-
-
-            <a
-              href="#"
-              className="
-              px-5
-              py-3
-              rounded-xl
-              bg-gray-100
-              text-gray-900
-              text-sm
-              font-medium
-              hover:bg-gray-200
-              transition
+                rounded-xl
+                bg-red-900
+                px-5
+                py-3
+                text-sm
+                font-medium
+                text-white
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:shadow-lg
               "
             >
               Instagram
             </a>
 
-
+            <a
+              href="https://www.facebook.com/grupoautomaticoficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                rounded-xl
+                bg-blue-900
+                px-5
+                py-3
+                text-sm
+                font-medium
+                text-white
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:shadow-lg
+              "
+            >
+              Facebook
+            </a>
 
             <a
-              href="#"
+              href="https://wa.me/573116298867"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-              px-5
-              py-3
-              rounded-xl
-              bg-green-500
-              text-white
-              text-sm
-              font-medium
-              hover:scale-105
-              transition
+                rounded-xl
+                bg-green-500
+                px-5
+                py-3
+                text-sm
+                font-medium
+                text-white
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:shadow-lg
               "
             >
               WhatsApp
             </a>
-
-
           </div>
-
         </div>
-
-
       </div>
-
-
     </div>
   );
-}
-
+};
 
 export default ContactInfo;

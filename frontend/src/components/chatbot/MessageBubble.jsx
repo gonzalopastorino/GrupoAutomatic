@@ -2,42 +2,57 @@ import { motion } from "framer-motion";
 import { BsCheck2All } from "react-icons/bs";
 
 export default function MessageBubble({ message }) {
+  const isUser = message.sender === "user";
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.2 }}
-      className={`
-        max-w-[80%]
-        p-3
-        rounded-2xl
-        text-sm
-        leading-relaxed
-        ${
-          message.sender === "user"
-            ? "ml-auto bg-blue-600 text-white"
-            : "bg-zinc-800 text-white"
-        }
-      `}
+      className={`flex ${isUser ? "justify-end" : "justify-start"}`}
     >
-      <div>
+      <div
+        className={`
+          max-w-[80%]
+          px-4
+          py-3
+          rounded-2xl
+          shadow-sm
+          text-sm
+          leading-relaxed
+          ${
+            isUser
+              ? "bg-[#17325C] text-white rounded-br-md"
+              : "bg-gray-100 text-gray-800 border border-gray-200 rounded-bl-md"
+          }
+        `}
+      >
         <p className="whitespace-pre-wrap">
           {message.text}
         </p>
 
-        {/* Footer del mensaje */}
-        <div className="flex items-center justify-end gap-1 mt-2">
-
-          {/* Hora */}
-          <span className="text-[11px] opacity-70">
-            {message.time}
-          </span>
-
-          {/* Check usuario */}
-          {message.sender === "user" && (
-            <BsCheck2All className="text-blue-200 text-sm" />
+        <div
+          className={`
+            flex
+            items-center
+            justify-end
+            gap-1
+            mt-2
+            text-[11px]
+            ${
+              isUser
+                ? "text-blue-100"
+                : "text-gray-500"
+            }
+          `}
+        >
+          {message.time && (
+            <span>{message.time}</span>
           )}
 
+          {isUser && (
+            <BsCheck2All className="text-blue-200 text-sm" />
+          )}
         </div>
       </div>
     </motion.div>

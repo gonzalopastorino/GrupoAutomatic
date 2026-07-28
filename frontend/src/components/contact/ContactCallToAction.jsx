@@ -14,13 +14,14 @@ const CallToAction = () => {
       {/* Contenido */}
       <div className="relative z-10 mx-auto flex w-full max-w-300 flex-col items-center px-5 text-center">
         <h2 className="mb-4 text-4xl font-bold leading-tight text-white md:text-6xl">
-          ¿Listo para transformar
+          ¿Listo para transformar?
           <br />
           tu empresa?
         </h2>
 
-        <p className="mb-8 max-w-3xl text-base leading-relaxed text-white md:text-2xl">
-          Contacta con nosotros hoy y obtén una cotización personalizada.
+        <p className="mb-8 max-w-4xl text-base font-normal leading-relaxed text-white md:text-2xl">
+          Agenda una consulta con nuestro equipo y descubre cómo podemos
+          ayudarte a implementar soluciones inteligentes para tu negocio.
         </p>
 
         <a
@@ -38,7 +39,7 @@ const CallToAction = () => {
             py-4
             text-lg
             font-semibold
-            text-[#13284D]
+            text-gray-900
             shadow-lg
             transition-all
             duration-300
@@ -49,7 +50,7 @@ const CallToAction = () => {
             active:scale-95
           "
         >
-          <span>Solicita asesoría gratuita</span>
+          <span>Llamar ahora</span>
           <span>→</span>
         </a>
       </div>
