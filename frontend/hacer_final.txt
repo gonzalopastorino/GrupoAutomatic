@@ -1,0 +1,18 @@
+1. corregir img en "servicios" ✓
+2. agregar sección productos ✓
+3. cambiar el tamaño de buttons redes para mobile
+4. cambiar tamaño de cards en testimonios 
+5. mejorar quienes somos
+6. mejorar header
+7. mejorar blog preview
+8. mejorar sección productos ✓
+9. borrar logo anterior ✓
+10. mejorar los button hover
+
+QUIENES SOMOS:
+productos
+1. AutoAgent https://autoagent.com.co/
+2. Juridesk https://juridesk.co/
+3. NeoTalentIA https://neotalentia.com/
+4. Sistema POS https://posventa.co/
+5. Proveedores en línea https://proveedoresenlinea.com.co/

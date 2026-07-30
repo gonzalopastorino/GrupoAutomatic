@@ -90,7 +90,7 @@ const ContactInfo = () => {
             Seguinos en redes
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap justify-center gap-3 md:justify-start">
             <a
               href="https://www.instagram.com/grupoautomatic/"
               target="_blank"
@@ -98,15 +98,18 @@ const ContactInfo = () => {
               className="
                 rounded-xl
                 bg-red-900
-                px-5
-                py-3
-                text-sm
+                px-4
+                py-2
+                text-xs
                 font-medium
                 text-white
                 transition-all
                 duration-300
                 hover:scale-105
                 hover:shadow-lg
+                md:px-5
+                md:py-3
+                md:text-sm
               "
             >
               Instagram
@@ -119,15 +122,18 @@ const ContactInfo = () => {
               className="
                 rounded-xl
                 bg-blue-900
-                px-5
-                py-3
-                text-sm
+                px-4
+                py-2
+                text-xs
                 font-medium
                 text-white
                 transition-all
                 duration-300
                 hover:scale-105
                 hover:shadow-lg
+                md:px-5
+                md:py-3
+                md:text-sm
               "
             >
               Facebook
@@ -140,15 +146,18 @@ const ContactInfo = () => {
               className="
                 rounded-xl
                 bg-green-500
-                px-5
-                py-3
-                text-sm
+                px-4
+                py-2
+                text-xs
                 font-medium
                 text-white
                 transition-all
                 duration-300
                 hover:scale-105
                 hover:shadow-lg
+                md:px-5
+                md:py-3
+                md:text-sm
               "
             >
               WhatsApp
