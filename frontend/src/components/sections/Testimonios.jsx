@@ -12,15 +12,12 @@ const testimonials = [
   {
     id: 3,
     author: "Roberto Díaz - Propietario",
-    text: "Profesionales con experiencia. Teníamos dudas en la adopción de IA pero nos dieron confianza en la implementación",
+    text: "Profesionales con experiencia. Teníamos dudas en la adopción de IA pero nos dieron confianza en la implementación.",
   },
 ];
 
-
 export default function TestimoniosTailwind() {
-
   return (
-
     <section
       className="
         relative
@@ -29,10 +26,9 @@ export default function TestimoniosTailwind() {
         from-[#13284D]
         to-[#203A73]
         py-24
-        md:py-27.5
+        md:py-28
       "
     >
-
       {/* Decoración */}
       <div
         className="
@@ -47,7 +43,6 @@ export default function TestimoniosTailwind() {
         "
       />
 
-
       <div
         className="
           relative
@@ -56,8 +51,6 @@ export default function TestimoniosTailwind() {
           max-w-300
         "
       >
-
-
         {/* Header */}
         <div
           className="
@@ -69,7 +62,6 @@ export default function TestimoniosTailwind() {
             text-center
           "
         >
-
           <span
             className="
               inline-block
@@ -86,7 +78,6 @@ export default function TestimoniosTailwind() {
             TESTIMONIOS
           </span>
 
-
           <h2
             className="
               mt-5
@@ -96,11 +87,10 @@ export default function TestimoniosTailwind() {
               md:text-5xl
             "
           >
-            Lo que dicen 
+            Lo que dicen
             <br />
             nuestros clientes
           </h2>
-
 
           <p
             className="
@@ -112,89 +102,63 @@ export default function TestimoniosTailwind() {
             Empresas que confiaron en nosotros para impulsar su
             transformación tecnológica.
           </p>
-
-
         </div>
-
-
 
         {/* Cards */}
         <div
           className="
-<<<<<<< HEAD
             relative
             z-10
             mx-auto
             grid
-            max-w-300
             grid-cols-1
             gap-8
+            sm:grid-cols-2
             lg:grid-cols-3
-=======
-          relative
-          z-10
-          mx-auto
-          grid
-          gap-8
-          grid-cols-[repeat(auto-fit,minmax(200px,1fr))]
-
-
->>>>>>> 1b2ce20dae7a303b8bc5ac47cf73c7d51af9fb2e
           "
         >
-
           {testimonials.map((item) => (
-
             <article
               key={item.id}
               className="
-                  rounded-xl
-                  border
-                  border-white/20
-                  bg-white/10
-                  p-8
-                  backdrop-blur-xl
-
+                flex
+                h-full
+                flex-col
+                rounded-xl
+                border
+                border-white/20
+                bg-white/10
+                p-8
+                backdrop-blur-xl
+                transition-all
+                duration-300
+                hover:-translate-y-2
+                hover:bg-white/15
               "
             >
-
               {/* Texto */}
               <p
                 className="
-                  mb-4
+                  mb-6
+                  flex-1
                   italic
-                  leading-relaxed
+                  leading-8
                   text-white
                 "
               >
                 "{item.text}"
               </p>
 
-
-
               {/* Usuario */}
-
-
-                <div>
-                <p className="text-right text-sm text-white/65">
+              <div className="border-t border-white/10 pt-5">
+                <p className="text-right text-sm font-medium text-white/70">
                   {item.author}
                 </p>
-                
-
               </div>
-
             </article>
-
           ))}
-
-
         </div>
-
-
       </div>
-
-
     </section>
-
   );
 }
