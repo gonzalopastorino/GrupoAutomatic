@@ -1,21 +1,18 @@
 const testimonials = [
   {
     id: 1,
-    name: "Carlos Martínez",
-    company: "CEO · Tech Solutions",
-    text: "El equipo de GrupoAutomatic entendió nuestras necesidades desde el primer día. Implementaron una solución robusta, moderna y con un soporte impecable.",
+    author: "Carlos Mendez - CEO · Tech Solutions",
+    text: "Grupo Automatic transformó nuestra infraestructura IT. Ahora nos enfocamos en crecer.",
   },
   {
     id: 2,
-    name: "María González",
-    company: "Gerente de Operaciones",
-    text: "Logramos optimizar nuestros procesos internos y reducir tiempos operativos. La experiencia fue excelente de principio a fin.",
+    author: "Maria González - Directora Operativa",
+    text: "El soporte 24/7 nos ha permitido operar sin interrupciones. Brindan un excelente servicio.",
   },
   {
     id: 3,
-    name: "Javier Rodríguez",
-    company: "Director Comercial",
-    text: "Profesionalismo, rapidez y compromiso. Hoy contamos con una infraestructura tecnológica mucho más segura y escalable.",
+    author: "Roberto Díaz - Propietario",
+    text: "Profesionales con experiencia. Teníamos dudas en la adopción de IA pero nos dieron confianza en la implementación",
   },
 ];
 
@@ -99,7 +96,9 @@ export default function TestimoniosTailwind() {
               md:text-5xl
             "
           >
-            Lo que dicen nuestros clientes
+            Lo que dicen 
+            <br />
+            nuestros clientes
           </h2>
 
 
@@ -122,6 +121,7 @@ export default function TestimoniosTailwind() {
         {/* Cards */}
         <div
           className="
+<<<<<<< HEAD
             relative
             z-10
             mx-auto
@@ -130,6 +130,16 @@ export default function TestimoniosTailwind() {
             grid-cols-1
             gap-8
             lg:grid-cols-3
+=======
+          relative
+          z-10
+          mx-auto
+          grid
+          gap-8
+          grid-cols-[repeat(auto-fit,minmax(200px,1fr))]
+
+
+>>>>>>> 1b2ce20dae7a303b8bc5ac47cf73c7d51af9fb2e
           "
         >
 
@@ -138,38 +148,20 @@ export default function TestimoniosTailwind() {
             <article
               key={item.id}
               className="
-                rounded-3xl
-                border
-                border-white/10
-                bg-white/10
-                p-8
-                backdrop-blur-xl
-                transition-all
-                duration-300
-                hover:-translate-y-3
-                hover:bg-white/15
+                  rounded-xl
+                  border
+                  border-white/20
+                  bg-white/10
+                  p-8
+                  backdrop-blur-xl
+
               "
             >
-
-
-              {/* Estrellas */}
-              <div
-                className="
-                  mb-7
-                  text-xl
-                  tracking-[4px]
-                  text-[#FFD166]
-                "
-              >
-                ★★★★★
-              </div>
-
-
 
               {/* Texto */}
               <p
                 className="
-                  mb-8
+                  mb-4
                   italic
                   leading-relaxed
                   text-white
@@ -181,61 +173,15 @@ export default function TestimoniosTailwind() {
 
 
               {/* Usuario */}
-              <div
-                className="
-                  flex
-                  items-center
-                  gap-5
-                "
-              >
-
-                <div
-                  className="
-                    flex
-                    h-14
-                    w-14
-                    items-center
-                    justify-center
-                    rounded-full
-                    bg-linear-to-br
-                    from-[#4F46E5]
-                    to-[#7C5CFF]
-                    text-xl
-                    font-bold
-                    text-white
-                  "
-                >
-                  {item.name.charAt(0)}
-                </div>
 
 
                 <div>
-
-                  <h4
-                    className="
-                      text-base
-                      font-semibold
-                      text-white
-                    "
-                  >
-                    {item.name}
-                  </h4>
-
-
-                  <span
-                    className="
-                      text-sm
-                      text-white/65
-                    "
-                  >
-                    {item.company}
-                  </span>
-
-
-                </div>
+                <p className="text-right text-sm text-white/65">
+                  {item.author}
+                </p>
+                
 
               </div>
-
 
             </article>
 

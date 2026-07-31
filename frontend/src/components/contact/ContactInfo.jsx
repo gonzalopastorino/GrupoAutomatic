@@ -31,7 +31,7 @@ const ContactInfo = () => {
         </h2>
 
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
-          Contanos tu desafío. Nuestro equipo desarrolla soluciones digitales,
+          Cuéntanos tu desafío. Nuestro equipo desarrolla soluciones digitales,
           automatización y software personalizado para empresas que buscan
           crecer.
         </p>
@@ -87,7 +87,7 @@ const ContactInfo = () => {
         {/* Redes sociales */}
         <div className="mt-10">
           <p className="mb-4 text-sm text-gray-500">
-            Seguinos en redes
+            Síguenos en redes
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 md:justify-start">
