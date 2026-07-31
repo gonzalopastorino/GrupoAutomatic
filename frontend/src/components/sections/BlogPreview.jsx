@@ -87,33 +87,9 @@ const Blog = () => {
                   {title}
                 </h3>
 
-                <p className="mb-6 flex-1 text-sm leading-7 text-gray-600">
+                <p className="flex-1 text-sm leading-7 text-gray-600">
                   {description}
                 </p>
-
-                <a
-                  href="/blog"
-                  className="
-                    inline-flex
-                    w-fit
-                    items-center
-                    justify-center
-                    rounded-lg
-                    border-2
-                    border-[#4F46E5]
-                    px-5
-                    py-2.5
-                    text-sm
-                    font-semibold
-                    text-[#4F46E5]
-                    transition-all
-                    duration-300
-                    hover:bg-[#4F46E5]
-                    hover:text-white
-                  "
-                >
-                  Leer más
-                </a>
               </div>
             </article>
           ))}

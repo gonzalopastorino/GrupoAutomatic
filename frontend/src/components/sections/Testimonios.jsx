@@ -126,7 +126,7 @@ export default function TestimoniosTailwind() {
             z-10
             mx-auto
             grid
-            max-w-175
+            max-w-300
             grid-cols-1
             gap-8
             lg:grid-cols-3
