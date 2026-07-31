@@ -108,19 +108,21 @@ const Nosotros = () => {
             leading-relaxed
             text-gray-600
             md:text-xl
+            max-w-[800px]
+            text-left
           "
         >
           Grupo Automatic nace en 2025 con la visión de transformar la forma
           en que las pymes y pequeñas empresas acceden a soluciones
-          tecnológicas de clase mundial. Durante este corto tiempo, hemos
+          tecnológicas. Durante este corto tiempo, hemos
           acompañado a empresas en Medellín y en toda Colombia en su
           transformación digital.
           
           <br />
           <br />
 
-          Hemos comenzado como un pequeño equipo de especialistas IT y hoy
-          esperamos ser en el futuro una empresa consolidada con experiencia
+          Hemos comenzado como un pequeño equipo de especialistas IT y vamos en camino a ser 
+          una empresa consolidada con experiencia
           en diversos sectores, desde retail hasta manufactura, servicios
           financieros y educación.
         </p>

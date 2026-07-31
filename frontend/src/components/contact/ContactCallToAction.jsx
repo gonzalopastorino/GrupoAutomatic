@@ -3,7 +3,7 @@ const CallToAction = () => {
     <section className="relative flex min-h-156.5 w-full items-center justify-center overflow-hidden">
       {/* Imagen de fondo */}
       <img
-        src="/images/redes.jpg"
+        src="/images/redes5.jpg"
         alt="Hero background"
         className="absolute inset-0 h-full w-full object-cover opacity-80"
       />
