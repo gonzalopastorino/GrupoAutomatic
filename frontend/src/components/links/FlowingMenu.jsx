@@ -159,18 +159,18 @@ function MenuItem({ link, text, url, image, speed, textColor, marqueeBgColor, ma
       >
         <div className="h-full w-fit flex" ref={marqueeInnerRef}>
           {[...Array(repetitions)].map((_, idx) => (
-            <div className="marquee-part flex items-center flex-shrink-0" key={idx} style={{ color: marqueeTextColor }}>
-              <span className="whitespace-nowrap uppercase font-normal text-[4vh] leading-[1] px-[1vw]">
+            <div className="marquee-part flex items-center shrink-0" key={idx} style={{ color: marqueeTextColor }}>
+              <span className="whitespace-nowrap uppercase font-normal text-[4vh] leading-none px-[1vw]">
                 {text}
               </span>
               {url && (
-                <span className="flex items-center gap-x-1 flex-shrink-0 px-[1vw]">
+                <span className="flex items-center gap-x-1 shrink-0 px-[1vw]">
                   <span className="material-symbols-outlined text-[3vh] leading-none normal-case font-normal">north_east</span>
                   <span className="text-[2.2vh] font-normal normal-case opacity-70 whitespace-nowrap">{url}</span>
                 </span>
               )}
               <div
-                className="w-[200px] h-[7vh] my-[2em] mx-[2vw] py-[1em] rounded-[50px] bg-cover bg-center"
+                className="w-50 h-[7vh] my-[2em] mx-[2vw] py-[1em] rounded-[50px] bg-cover bg-center"
                 style={{ backgroundImage: `url(${image})` }}
               />
             </div>
